@@ -1,0 +1,11 @@
+.social_buttons{ background:url("social_buttons.png") top left no-repeat; }
+#li_h{ width:50px; height:50px; background-position:0 0; }
+#li_h:hover{ width:50px; height:50px; background-position:0 -50px; }
+#li_h:active{ width:50px; height:50px; background-position:0 -100px; }
+#fb{ width:50px; height:50px; background-position:0 -150px; }
+#fb:hover{ width:50px; height:50px; background-position:0 -200px; }
+#fb:active{ width:50px; height:50px; background-position:0 -250px; }
+#twit{ width:50px; height:50px; background-position:0 -300px; }
+#twit:hover{ width:50px; height:50px; background-position:0 -350px; }
+#twit:active{ width:50px; height:50px; background-position:0 -400px; }
+

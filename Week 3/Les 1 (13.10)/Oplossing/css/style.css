@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* CSS Document */
+
+<style type="text/css">
+<!--
+body { /* Initial containing block */
+    background: #FFF;
+    font: 100%/150% Verdana, Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0;
+}
+#wrapper { /* Containing block voor #kop, #kollinks, #kolmidden, #kolrechts en #voet. */
+    width: 998px; /* Maat voor schermresolutie 1024px breed: past nog een scrollbalk naast */
+    margin: auto; /* auto verdeelt de ruimte links en rechts van de pagina gelijk: de site staat nu gecentreerd. Let op verwarrend detail: als de margin-top op 0 staat verschijnt er juist een margin in Dreamweaver maar niet in de browsers. Dit gebeurt bij margin-top: auto niet. */
+    background: #DBF3F3;
+}
+#kop { /* groen */
+    background-color: #090;
+}
+#kollinks { /* rode kolom */
+    background-color: #C00;
+    width: 200px; /* Een div met float heeft een inline eigenschappen en past zijn breedte aan de inhoud aan. Geef de div een width zodat u niet voor verassingen komt te staan. */
+    float: left;/* Positioneert het element links. Let op: alleen de inhoud van elementen die in de html-code ná deze float komen te staan, zullen rechts ervan komen te staan! Deze box staat door eigenschap float niet meer in de flow van de pagina. De containing block (#wrapper) schaalt hierdoor niet meer mee met de hoogte van deze box. */
+	min-height: 485px;
+}
+#kolrechts { /* blauwe kolom */
+    background-color: #0CF;
+    float: right;/* Positioneert het element rechts. Doet verder net als bij de rode kolom. */
+    width: 200px;
+}
+#kolmidden { /* gele kolom. Doordat #kolmidden geen float heeft staat deze nog wel in de flow van de pagina. Daardoor zal de containing block (#wrapper) meeschalen met de hoogte van #kolmidden. */	
+	background-color: #FF3;
+	padding-top: .3em; /*  =======  EEN DOORDENKER .em  kan je nakijken op W3C======= De h2 die op deze pagina als eerste in #kolmidden staat lijnt nu uit met de tekst in de kolommen ernaast. */
+	margin-right: 200px; /* Insinueert kolommen. Maak deze gelijk of iets groter dan de breedte van #kollinks */
+	margin-left: 200px; /* Insinueert kolommen. Maak deze gelijk of iets groter dan de breedte van #kollinks */
+
+/* Vervang zonodig de bovenstaande margins met de onderstaande borders zodat het lijkt alsof de kolommen doorlopen. Dit werkt slechts als #wrapper de langste kolom is. Zie Tips voor een 'echte' kolommen-opstelling. */
+
+/* border-right: 200px solid #47D2FF;
+border-left: 200px solid #CD2900; */
+
+
+}
+#voet {
+    background: #904800;
+    clear: both;/* Beëindigt het effect van float (van kolrechts) zodat de containing block (#wrapper) in hoogte meerekt met #voet die altijd staat onder de langste kolom. */
+}
+h1 {
+    text-align: center;
+    padding: 20px; /* Lijkt in Dreamweaver niet nodig maar in browser steken de poten van de letters anders buiten de div */
+    margin: 0; 
+}
+h2 { /* =======  EXTRA TIPS! ======= */
+	font-size: 110%;
+    margin: 0; /* Geen ongewenste witruimte boven en onder. */
+	padding: 0 6px; /* Geeft ruimte links en rechts van de tekst. */	
+}
+p {    
+	font-size: 80%;
+	margin: 0; /* Maakt een einde aan ongewenste witruimte boven en onder de boxen waar de inhoud begint of eindigt met een alinea. */
+	padding: 6px; /* Geeft weer wat witruimte tussen de alinea's na verwijderen van de margin en ruimte links en rechts van de tekst. */
+      
+}
+#voet p {
+    text-align: center;
+}
+

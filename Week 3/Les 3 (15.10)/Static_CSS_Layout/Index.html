@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<title>Test: koppen, afbeeldingen, kolommen en lijsten</title>
+			<link href="css/style.css" rel="stylesheet" type="text/css" />
+		</head>
+
+		<body>
+			<div id="inhoud">
+				<div id="kop">
+					<h1>Dit is de kop</h1>
+				</div>
+
+				<div id="kolom_links">
+					<ul>
+						<li>Menu 1</li>
+						<li>Menu 2</li>
+						<li>Menu 3</li>
+						<li>Menu 4</li>
+						<li>Menu 5</li>
+						<li>Menu 6</li>
+					</ul>
+				</div>
+
+				<div id="kolom_rechts">
+					<p><strong>Kolrechts</strong> heeft een float: right en gedraagt zich net als #kollinks.</p>
+				</div>
+
+				<div id="midden">
+					<h1>Kolmidden</h1>
+						<img class="foto_links" src="css/afbeeldingen/Kyra.png" alt="Kyra" title="Kyra" />
+						<p>Kolmidden heeft geen float en zit dus nog in de flow van de pagina en gedraagt zich daarom 'normaal'. #kolmidden weet bovendien niets van #kollinks en #kolrechts doordat deze een float hebben en gedraagt zich daarom alsof deze niet bestaan.</p>
+					
+                  <h1> Kolommen</h1>
+						<p>Door hun float zweven #kollinks en #kolrechts boven #kolmidden. Doordat #kolmidden een linker- en rechtermarge heeft met gelijke afmeting als de breedte <cite>(incl. eventuele padding!)</cite> van de linker-en rechterkolom, staat #kolmidden voor het oog altijd mooi tussen beide kolommen in.</p>
+                        
+					<h1>Float</h1>
+						<p>Probeer eens uit wat er gebeurt als de meeste tekst staat in kollinks, kolmidden of kolrechts. U zult zien dat #wrapper meerekt. Maar doet #wrapper dat ook als u #voet verwijdert? Hoe komt dit?</p>
+						<img class="foto_rechts" src="css/afbeeldingen/Kyra.png" alt="Kyra" title="Kyra" />
+						<p>Een element met float is uit de flow van de pagina, daarom doet #wrapper alsof ze niet bestaan. #kolmidden en #voet hebben geen float, zitten dus nog in de flow van de pagina, zijn dus bekend bij #wrapper die daarom met ze mee rekt.</p>
+					<h1>Het boxmodel</h1>
+						<p>De totale breedte die een element inneemt is de som van margin, border, padding en width. Bijvoorbeeld: width(200px) + padding (20px+20px) + borders (20px+20px) = 280px. Margin is geen vastge maat omdat de marges van aaneengrenzende elementen elkaar overlappen.</p>
+						<p>Omdat Internet Explorer het boxmodel anders interpreteert is het beter om te zorgen dat een element met width geen padding heeft, geef dan de padding aan de inhoud van het element.</p>
+				</div>
+
+				<div id="voet">
+					<p><strong>Voet</strong> heeft een clear both en nestelt zich dus onder de boxen met een float.</p>
+				</div>
+			</div>
+		</body>
+	</html>

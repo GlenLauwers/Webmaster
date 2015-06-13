@@ -1,0 +1,11 @@
+.buttons{ background:url("buttons.png") top left no-repeat; width:56px; height:56px; display:block; }
+#linkedin_btn{ background-position:0 0; }
+#linkedin_btn:hover{ background-position:0 -56px; }
+#linkedin_btn:active{ background-position:0 -112px; }
+#facebook_btn{ background-position:0 -168px; }
+#facebook_btn:hover{ background-position:0 -224px; }
+#facebook_btn:active{ background-position:0 -280px; }
+#twitter_btn{ background-position:0 -336px; }
+#twitter_btn:hover{ background-position:0 -392px; }
+#twitter_btn:active{ background-position:0 -448px; }
+

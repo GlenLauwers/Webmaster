@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)file:///Users/glenlauwers/Downloads/oplossing_oef_klas.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Static CSS Lay-out</title>
+<meta name="keywords" content="zoekwoord, zoekwoord, enz"><!-- Gebruik uitsluitend zoekwoorden die op de pagina voorkomen en niet meer dan nodig is. (Dit is een commentaar dat je kunt verwijderen) -->
+<meta name="description" content="Plaats hier een korte beschrijving. Deze is per pagina toegespitst op de inhoud van die pagina. Gebruik zoveel mogelijk zoekwoorden die bij voorkeur wel voorkomen in de pagina.">
+<link style="css/style" href="css/style.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+  
+  <div id="wrapper">
+
+      <div id="kop"> 
+        <h1>Dit is de kop</h1>
+  </div> <!-- einde kop -->
+
+      <div id="kollinks">
+        <p><strong>Kollinks </strong>heeft een float: left en is dus uit de flow van de pagina. #wrapper negeert hierdoor #kolrechts en zal niet meerekken met de afmetingen van deze box.</p>
+	  </div><!-- einde kollinks -->
+	
+	  <div id="kolrechts">
+		<p><strong>Kolrechts</strong> heeft een float: right en gedraagt zich net als #kollinks.</p>
+</div><!-- einde kolrechts -->
+  
+    <div id="kolmidden">		  
+		  <h2>Kolmidden</h2>
+	  <p>Kolmidden heeft geen float en zit dus nog in de flow van de pagina en gedraagt zich daarom 'normaal'. #kolmidden weet bovendien niets van #kollinks en #kolrechts doordat deze een float hebben en gedraagt zich daarom alsof deze niet bestaan. </p>
+      <h2>Kolommen</h2>
+      <p>Door hun float zweven  #kollinks en #kolrechts boven #kolmidden. Doordat #kolmidden een linker- en rechtermarge heeft met gelijke afmeting als de breedte <em>(incl. eventuele padding!)</em> van de linker- en rechterkolom, staat #kolmidden voor het oog altijd mooi tussen beide kolommen in.</p>
+      <h2>Float</h2>
+<p>Probeer eens uit wat er gebeurt als de meeste tekst staat in kollinks, kolmidden, of kolrechts. U zult zien dat #wrapper meerekt. Maar doet #wrapper dat ook als u #voet verwijdert? Hoe komt dit?</p>
+<p>Een element met float is uit de flow van de pagina, daarom doet #wrapper alsof ze niet bestaan. #kolmidden en #voet hebben geen float, zitten dus nog in de flow van de pagina, zijn dus bekend bij #wrapper die daarom met ze mee rekt.</p>
+		  <h2>Het boxmodel</h2>
+          <p>De totale breedte die een element inneemt is de som van margin, border, padding en width. Bijvoorbeeld:
+            width(200px) + padding (20px+20px) + borders (20px+20px) = 280px. Margin is geen vaste maat omdat de marges van aaneengrenzende elementen elkaar overlappen.</p>
+          <p>Omdat Internet Explorer het boxmodel anders interpreteert is het beter om te zorgen dat een element met een width geen padding heeft, geef dan de padding aan de <em>inhoud</em> van het element.</p>
+  </div><!-- einde kolmidden -->
+	 
+	 <div id="voet">
+	    <p><strong>VOET</strong> heeft een clear: both en nestelt zich dus onder de boxen met een float.</p> 
+	 </div><!-- einde voet -->
+	 
+  </div><!-- einde wrapper -->
+</body>
+</html>

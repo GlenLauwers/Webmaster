@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+body {
+	background-color: #fff;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+body * {
+	font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+p {
+	margin-bottom: 1.1em;
+	margin-top: 0;
+}
+#main p.lastNode {
+	margin-bottom: 0;
+}
+a:link img, a:visited img {
+	border: none;
+}
+div.clearFloat {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0px;
+}
+li.clearFloat {
+	clear: both;
+}
+ul.symbolList {
+	display: inline;
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.AbsWrap {
+	position: relative;
+	width: 100%;
+}
+.rowWrap {
+	width: 100%;
+}
+#main {
+	margin: 0 auto;
+	width: 800px;
+}
+#header {
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	background-color: #238c00;
+	width: 800px;
+	padding-top: 0px;
+	height: 79px;
+}
+html > body #header {
+	height: auto;
+	min-height: 80px;
+}
+#logo {
+	margin-left: 56px;
+	margin-top: 19px;
+	display: inline;
+	float: left;
+	height: 43px;
+	margin-bottom: 0;
+	width: 158px;
+}
+#tweet {
+	margin-right: 221px;
+	margin-top: 20px;
+	display: inline;
+	float: right;
+	height: 40px;
+	margin-bottom: 0;
+	width: 40px;
+}
+#content {
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	background-color: #0059b2;
+	background-attachment: scroll;
+	background-image: url(images/content_bg.jpg);
+	background-position: left top;
+	background-repeat: repeat;
+	width: 580px;
+	padding-top: 0px;
+	height: 420px;
+}
+html > body #content {
+	height: auto;
+	min-height: 420px;
+}
+#sidebar {
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	background-color: #00b259;
+	background-attachment: scroll;
+	background-image: url(images/circle.jpg);
+	background-position: 20 top;
+	background-repeat: repeat-y;
+	width: 220px;
+	padding-top: 0px;
+	height: 420px;
+}
+html > body #sidebar {
+	height: auto;
+	min-height: 420px;
+}
+#footer {
+	margin-left: 0px;
+	margin-top: 0px;
+	display: inline;
+	float: left;
+	margin-bottom: 0;
+	background-color: #238c00;
+	background-attachment: scroll;
+	background-image: url(images/footer_bg.jpg);
+	background-position: left top;
+	background-repeat: repeat-x;
+	width: 800px;
+	padding-top: 0px;
+	height: 100px;
+}
+html > body #footer {
+	height: auto;
+	min-height: 100px;
+}

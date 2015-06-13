@@ -1,0 +1,5 @@
+.sprite_follow{ background:url("sprite follow.png") top left no-repeat; }
+#follow_t{ width:200px; height:40px; background-position:0 0; }
+#follow_t:hover{ width:200px; height:40px; background-position:0 -40px; }
+#follow_t:active{ width:200px; height:40px; background-position:0 -80px; }
+

@@ -1,0 +1,11 @@
+.footer_social{ background:url("footer_social.png") top left no-repeat; }
+#li_f{ width:40px; height:40px; background-position:0 0; }
+#li_f:hover{ width:40px; height:40px; background-position:0 -40px; }
+#li_f:active{ width:40px; height:40px; background-position:0 -80px; }
+#fb_f{ width:40px; height:40px; background-position:0 -120px; }
+#fb_f:hover{ width:40px; height:40px; background-position:0 -160px; }
+#fb_f:active{ width:40px; height:40px; background-position:0 -200px; }
+#twitter{ width:40px; height:40px; background-position:0 -240px; }
+#twitter:hover{ width:40px; height:40px; background-position:0 -280px; }
+#twitter:active{ width:40px; height:40px; background-position:0 -320px; }
+

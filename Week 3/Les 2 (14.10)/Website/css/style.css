@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Oefening 1 */
+body{
+		font-family:Verdana, Arial, Helvetica, Sans-serif;
+		font-size:100%;
+		background-color: ffffff;
+}
+
+p{
+		font-size: 80%;
+}
+
+ol{
+		background-color: #AC28D8;
+}
+
+ul{
+		background-color: #21F447;
+}
+
+li{
+		font-size: 80%;
+		background-color: #4CBCDB;
+}
+
+ol li li{
+		font-size: 100%;
+		color: #FFF;
+		background-color:#F854A8;
+}
+
+ul li{
+		list-style-type: disc;
+}
+
+ul, ol{
+		margin-left: 0;
+}
+
+/* Oefening 2 */
+
+ul.bulletplaatje{
+		padding-left: 0;
+}
+
+.bulletplaatje li {
+		background-color:#BA13D8;
+		color:#15E31E;
+		background-image: url(../afbeeldingen/Naamloos-1.png);
+		background-repeat:no-repeat;
+		padding-left: 25px;
+		list-style-type:none;
+}
+
+/* Oefening 3 */
+dd{
+		color: #FFFFFF;
+		margin-left: 0;
+}
+
+dt{
+		color:#8A003D;	
+		font-weight: bold;
+}
+
+dl{		background-color:#1F9900;
+		font-size: 80%;
+		margin-top: 1em;
+		padding: 10px;
+}

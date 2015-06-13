@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Voorbeeldformulier</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/150% Verdana, Geneva, sans-serif;
+	color: #333;
+	background: 0;
+	margin: 0 20px;
+}
+h1 {
+	font-weight: bold;
+	color: #FFF;
+}
+p, li {
+	font-size: 90%;
+	width: 43em;
+}
+
+/* ======= HET FORMULIER ========== */
+
+form {
+	font-weight: bold;
+	color: FFF;
+}
+fieldset {
+	font-size: 80%;
+	width: 33em;
+	padding-bottom: 1em;
+	/* border: 0; schakelt border van de fieldset uit */
+}
+
+label {
+	display: block;
+	color: #630;
+	font-weight: bold;
+	position: relative;
+	text-align: right;
+	width: 10em;
+}
+input, textarea, select {
+	font: 100%/150% Verdana, Geneva, sans-serif;
+	position: absolute;
+	left: 11.5em;
+	top: 0px;
+	overflow: auto; /* deze beter voor IE7 op visible zetten om onnodige scrollbalken te voorkomen */
+}
+input, textarea {
+	border: 1px solid #630;
+	margin: .6em;
+	background: #ECFFFF;
+}
+.velden {
+	width: 20em;
+}
+textarea {
+	height: 6em;
+}
+#veldensettekstgebied {
+	padding-bottom: 6em;
+}
+#knoppen {
+	border-width: 0px;
+	text-align: right;
+	position: relative;
+}
+#wisknop {
+	margin-left: 7.6em;
+}
+#verzendknop, #wisknop {
+	margin-top: 1em;
+}
+select#kiesmaand {
+	left: 12.0em;
+	margin-top: 0.5em;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+<!-- De attributen 'for' die hieronder in de labeltags staan worden door Dreamweaver niet verzorgd. De WCAG (Web Content Accessebility Guide van het W3C beveelt ze echter voor de toegankelijkheid wel aan. De waarde van het for-attribuut is gelijk aan die van de id van het het formulieritem. In plaats van het for-attribuut kan je ook het formulieritem zelf voorzien van een title-attribuut met dezelfde waarde als de id. Dit geeft bovendien een tooltip in de browser. -->
+
+<h1>Aanvraag Documentatie </h1>
+
+<form id="documentatieaanvraag" method="post" action="">
+
+ <fieldset id="veldensettekstgebied">
+   <legend>Mijn gegevens:</legend>
+   <label for="naam">Naam
+     <input name="naam" type="text" class="velden" id="naam" />
+   </label>
+   <label for="email">E-mail
+     <input name="email" type="text" class="velden" id="email" />
+   </label>
+   <label for="opmerking">Opmerking
+     <textarea name="opmerking" cols="45" rows="5" class="velden" id="opmerking"></textarea>
+   </label>
+ </fieldset>
+
+ <fieldset>
+   <legend>Ik ben geïnteresseerd in reizen naar:</legend>
+ <label for="reizen_0">
+     <input name="reizen" type="checkbox"  value="china" id="reizen_0" />
+     China</label>
+   <label for="reizen_1">
+     <input type="checkbox" name="reizen" value="japan" id="reizen_1" />
+   Japan</label>
+   <label for="reizen_2">
+     <input type="checkbox" name="reizen" value="indonesie" id="reizen_2" />
+   Indonesië;</label>
+ </fieldset>
+
+<!-- Merk op dat er de waardes van name in de checkboxgroup hierboven allemaal eindigen met []. Als alle checkboxen namelijk dezelfde waarde hebben staan bij name geeft dit problemen bij de afhandeling van het formulier. Als er meerdere boxen worden aangevinkt, wordt alleen de laatst aangevinkte checkbox aan bijv. php doorgegeven. De toevoeging van [] aan het eind lost dit op. Bij de radiobuttongroep hieronder komt het probleem niet voor omdat het hier juist de bedoeling is dat er slechts één keuze gemaakt kan worden. -->
+
+ <fieldset>
+   <legend>Mijn voorkeur gaat uit naar:</legend>
+<label for="voorkeur_0">
+     <input type="radio" name="voorkeur" value="rondreizen" id="voorkeur_0" />
+     Rondreizen</label>
+   <label for="voorkeur_1">
+     <input type="radio" name="voorkeur" value="gezinsreizen" id="voorkeur_1" />
+   Gezinsreizen</label>
+   <label for="voorkeur_2">$
+     <input type="radio" name="voorkeur" value="wandelreizen" id="voorkeur_2" />
+   Wandelreizen</label>
+
+<!-- Merk op dat name met dezelfde waarde wel meerdere malen in formulieritems op dezelfde pagina mag voor komen (control names). Dat geldt niet voor name en id in de elementen a, form, img en map, daar mogen ze slechts éénmaal op dezelfde pagina voor komen (document-wide identifiers). -->    
+
+   <label for="kiesmaand">Vertrek
+     <select name="maand" id="kiesmaand">
+       <option value="januari">Januari</option>
+       <option value="februari" selected="selected">Februari</option>
+       <option value="maart">Maart</option>
+       <option value="april">April</option>
+       <option value="mei">Mei</option>
+       <option value="juni">Juni</option>
+       <option value="juli">Juli</option>
+       <option value="augustus">Augustus</option>
+       <option value="september">September</option>
+       <option value="oktober">Oktober</option>
+       <option value="november">November</option>
+       <option value="december">December</option>
+     </select>
+   </label>
+ </fieldset>
+ <fieldset id="knoppen">
+
+  <input type="submit" name="verzendknop" id="verzendknop" value="Verzenden" />
+  <input type="reset" name="wisknop" id="wisknop" value="Wissen" />
+
+ </fieldset>
+</form>
+
+
+</html>

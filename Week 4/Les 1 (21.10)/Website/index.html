@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<title>Formulier</title>
+			<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+			<meta name="Keywords" content="aanvraag, documentatie" />
+			<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		</head>
+
+<body
+<h1>Aanvraag Documentatie </h1>
+<form>
+	<fieldset id="mijngegevens">
+		<legend>Mijn gegevens:</legend>
+			<label for="naam">Naam
+				<input name="naam" type="text" class="velden" id="naam" />
+			</label>
+   
+			<label for="email">E-mail
+				<input name="email" type="text" class="velden" id="email" />
+			</label>
+   
+			<label for="opmerking">Opmerking
+				<textarea name="opmerking" cols="45" rows="5" class="velden" id="opmerking"></textarea>
+			</label>
+   
+	</fieldset>
+
+	<fieldset>
+		<legend>Ik ben geïnteresseerd in reizen naar:</legend>
+   
+		<label for="China">
+			<input name="checkbox" type="checkbox"  value="china" id="China" />
+			China</label>
+		<label for="Japan">
+        	<input type="checkbox" name="Japan" value="japan" id="Japan" />
+			Japan</label>
+ 		<label for="Indonesië">
+   			<input type="checkbox" name="reizen" value="indonesie" id="Indonesië" />
+   			Indonesië</label>
+   
+	</fieldset>
+
+	<fieldset>
+		<legend>Mijn voorkeur gaat uit naar:</legend>
+   
+			<label for="Rondreizen">
+				<input type="radio" name="voorkeur" value="rondreizen" id="Rondreizen" />
+				Rondreizen</label>
+			<label for="Gezinsreizen">
+				<input type="radio" name="voorkeur" value="gezinsreizen" id="Gezinsreizen" />
+				Gezinsreizen</label>
+			<label for="Wandelreizen">
+				<input type="radio" name="voorkeur" value="wandelreizen" id="Wandelreizen" />
+               Wandelreizen</label>
+
+			<label for="kiesmaand">Vertrek
+				<select name="maand" id="kiesmaand">
+					<option value="januari">Januari</option>
+					<option value="februari">Februari</option>
+					<option value="maart">Maart</option>
+					<option value="april">April</option>
+					<option value="mei">Mei</option>
+					<option value="juni">Juni</option>
+					<option value="juli">Juli</option>
+					<option value="augustus">Augustus</option>
+					<option value="september">September</option>
+					<option value="oktober">Oktober</option>
+					<option value="november">November</option>
+       				<option value="december">December</option>
+				</select>
+			</label>
+   
+		</fieldset>
+        
+		<fieldset id="knoppen">
+			<input type="submit" name="verzendknop" id="verzendknop" value="Verzenden" />
+			<input type="reset" name="wisknop" id="wisknop" value="Wissen" />
+		 </fieldset>
+</form>
+</body>
+</html>

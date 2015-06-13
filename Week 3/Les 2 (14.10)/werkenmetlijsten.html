@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>oefening werken met lijsten</title>
+
+<style>
+body{
+	font-size:100%;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	background-color:FFFFF;
+	}
+p {
+	font-size:80%;
+}
+ol {
+	background-color:#AC28D8;
+}
+
+ul {
+	background-color:#21F447;
+}
+
+li {
+	background-color:#4CBCDB;
+	font-size:80%;
+}
+
+ol li li {
+    font-size: 100%;
+    background: #F854A8; /* fuxia */
+    color: #FFF;  /* Anders pakt ie de tekstkleur van de ol */	
+}
+
+ul li {
+	list-style-type:disc;
+}
+
+ul, ol {
+	margin-left:0;
+}
+
+ul.bulletplaatje {
+    padding-left: 0;
+}
+.bulletplaatje li{
+	background-image: url("file:///Macintosh HD/Users/bramclaes/Documents/week3/afbeelding/mario.png");
+	background-repeat: no-repeat;
+	background-color:#BA13D8;
+	color:#15E31E;
+	padding-left:25px;
+	list-style-type:none;
+}
+
+/* ==================== DEFINITIELIJSTEN ======================= */
+
+dl {
+    font-size: 80%;
+    padding: 10px;
+    margin-top: 1em;
+    background: #1F9900;
+}
+dt {
+    font-weight: bold;
+    color: #8A003D;
+}
+dd {
+    margin-left: 0;
+    color: #FFFFFF;
+}
+</style>
+
+</head>
+
+<body>
+
+<p>Geordende lijst met geneste ongeordende lijst.</p>
+
+<ol>
+
+
+	<li>bloemen
+        <ul>
+            <li>rozen</li>
+            <li>tulpen</li>
+            <li>lellies</li>
+        </ul>
+    </li>
+
+    <li>planten</li>
+    <li>struiken</li>
+    <li>bomen</li>
+</ol>
+
+
+<p>Lijst met achtergrondplaatjes als opsommingsteken<img src="file:///Macintosh HD/Users/bramclaes/Documents/week3/afbeelding/mario.png" width="20" height="20" alt=""/></p>
+
+<ul class="bulletplaatje">
+  <li>Lorem</li> 
+  <li>ipsum</li> 
+  <li>dolor</li> 
+  <li>sit</li> 
+  <li>amet</li> 
+</ul>
+
+
+<p>Definitielijst</p>
+
+<dl>
+  <dt>Eerste definitie uit de definitielijst</dt>
+  <dd>Eu fugiat nulla pariatur. Ut enim ad minim veniam, ut labore et dolore magna aliqua. Ullamco laboris nisi duis aute irure dolor lorem ipsum dolor sit amet.</dd>
+  <dt>Tweede definitie</dt>
+  <dd>Consectetur adipisicing elit, ut enim ad minim veniam, sed do eiusmod tempor incididunt. Velit esse cillum dolore cupidatat non proident, eu fugiat nulla pariatur.</dd>
+  <dt>En nog een laatste definitie</dt>
+  <dd>In reprehenderit in voluptate velit esse cillum dolore cupidatat non proident. Lorem ipsum dolor sit amet, ut enim ad minim veniam, quis nostrud exercitation.</dd>
+</dl>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-size: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #333;
+	background: 0;
+	margin: 0 20px;
+}
+h1 {
+	font-weight: bold;
+	color: #FFF;
+}
+p, li {
+	font-size: 90%;
+	width: 43em;
+}
+
+form {
+	font-weight: bold;
+	color: FFF;
+}
+fieldset {
+	font-size: 80%;
+	width: 33em;
+	padding-bottom: 1em;
+}
+
+label {
+	display: block;
+	color: #630;
+	font-weight: bold;
+	position: relative;
+	text-align: right;
+	width: 10em;
+	
+}
+input, textarea, select {
+	font: 100%/150% Verdana, Geneva, sans-serif;
+	position: absolute;
+	left: 11.5em;
+	top: 0px;
+	overflow: auto;
+}
+
+input, textarea {
+	border: 1px solid #630;
+	margin: .6em;
+	background: #ECFFFF;
+}
+
+.velden {
+	width: 20em;
+}
+
+textarea {
+	height: 6em;
+}
+
+#mijn_gegevens{
+	padding-bottom: 6em;
+}
+
+#knoppen {
+	border-width: 0px;
+	text-align: right;
+	position: relative;
+}
+
+#wisknop {
+	margin-left: 7.6em;
+}
+
+#verzendknop, #wisknop {
+	margin-top: 1em;
+}
+
+select#maand {
+	left: 12.0em;
+	margin-top: 0.5em;
+}

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	Background-image: url(../afbeeldingen/gebruikte/zwarte-gestippelde-naadloze-achtergrond-vector_53-18068.jpg);
+	background-color: #CFF;
+	font: 100%/150% Verdana, Geneva, sans-serif;
+	color: #FFFFFF;
+}
+
+ul #navigatie{
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#navigatie li{
+	background-color: #0000000;
+	width: 20%;
+	float: left;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	position:relative;
+	display: block;
+	text-decoration:none;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#navigatie a{
+    color: white;
+    text-decoration: none;
+    display: block;
+	background-color:#000000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+	text-align: center;
+}
+#navigatie a:hover{
+    text-decoration: underline;
+}
+#navigatie li ul {
+    display: none;
+}
+#navigatie li ul li{
+    float: none;
+    width: 100%;
+}
+#navigatie li:hover > ul{
+    display: block;
+}

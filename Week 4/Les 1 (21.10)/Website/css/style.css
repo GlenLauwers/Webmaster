@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+form{
+	color: #5D0809;
+}
+
+h1{
+	font-size: 120%;
+}
+
+legend{
+	font-weight: bold;
+}
+
+#mijngegevens {
+	width: 50%;
+	padding-bottom: 5%;
+}
+
+fieldset{
+	width: 50%;
+}
+#naam{
+	background-color: #86C3C5;
+}
+
+#email{
+	background-color: #86C3C5;
+}
+
+#opmerking{
+	background-color: #86C3C5;
+}
+label {
+	display: block;
+	font-weight: bold;
+	position: relative;
+	text-align: right;
+	width: 20%;
+}
+
+input, textarea, select {
+	position: absolute;
+}
+
+input, textarea {
+	border: 1px solid #630;
+	margin: .6em;
+	background: #ECFFFF;
+}

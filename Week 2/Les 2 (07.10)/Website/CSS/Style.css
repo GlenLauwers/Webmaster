@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	font-family:arial, helvetica, sans serif;
+	font-size: 100%;
+	color: #E1E1E1;
+	background-color:#00889B;
+}
+
+h1{
+	font-size: 200%;
+}
+
+h2{
+	font-size: 180%;
+}
+
+h3{
+	font-size: 150%;
+}
+
