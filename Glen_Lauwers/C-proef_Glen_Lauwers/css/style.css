@@ -1,0 +1,406 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Hele document */
+body{
+	width: 998px;/* breedte van de pagina */
+	margin:auto;/* automatisch centreren van de pagina */
+}
+
+/* Navigatie*/
+#navigatie{
+	background-color:#dadada;/* achtergrondkleur */
+	height: 40px; /* Hoogte van de navigatiebalk */
+}
+
+/* Links */
+.link li{
+	float:left; /* links uitlijnen */
+	margin-top: .6em; /* top-marge */
+	margin-left: 50px; /* linker-marge */
+}
+
+.link a:hover{
+	text-decoration:underline; /* onderlijnen van de links bij een hover */
+}
+
+.link a{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 14pt;
+	color: #ffffff;
+	text-decoration: none;/* Geen opsommingsteken */
+}
+
+/* Rechts */
+.logo li{
+	float: right; /* rechts uitlijnen */
+	margin-top: .4em;
+	margin-right: 50px;
+}
+
+.logo a{
+	text-decoration: none;
+}
+
+.logo a:hover{
+	background: #ffffff;
+}
+
+/* Hoofding */
+#hoofding h1{
+	font-family:Myriad Pro, arial;
+	font-size: 42pt;
+	font-weight: normal;
+	color: #777777;
+	text-align: center; /* tekst centreren */
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+#hoofding p{
+	font-family: Myriad pro, arial;
+	font-size: 20pt;
+	font-weight: normal;
+	color: #e46965;
+	text-align:center;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+/* titel */
+#titel{
+	height: 300px;
+	background:url(../afbeeldingen/foto.png); /* achtergrond-foto */
+}
+
+#marge_links{
+	float:left;
+}
+
+#marge_rechts{
+	float: right;
+	width: 45px;
+}
+
+#titel li{
+	float:left;
+	list-style-type: none;
+}
+
+/* Inhoud */
+#inhoud h1{
+	font-family: Myriad Pro, arial;
+	font-size: 42pt;
+	font-weight: normal;
+	text-align:left;
+	color: #e46965;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+
+#inhoud p{
+	font-family: Arial;
+	font-size: 18pt;
+	font-weight: normal;
+	text-align: left;
+	color: #777777;
+	margin:0;
+	margin-left: 50px;
+}
+
+#selfie{
+	float: left;
+}
+
+/* Formulier */
+#formulier h1{
+	font-family: Myriad Pro, arial;
+	font-size: 42pt;
+	font-weight: normal;
+	text-align:left;
+	color: #e46965;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	margin-left: 50px;
+}
+
+#formulier form{
+	margin-left: 50px;
+	width: 400px;
+}
+
+.formulier{
+	font-size: 15pt;
+	font-family: myriad pro, arial;
+	margin-top: 10px;
+}
+
+#mijn_gegevens h1{
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-family: Myriad pro, arial;
+	color:#000000;
+}
+
+#extra h1{
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-family: Myriad pro, arial;
+	color:#000000;
+}	
+
+#formulier input{
+	display: block; /* block-element */
+	margin-bottom: 10px;
+	font-family: Myriad pro, arial;
+	font-size: 20pt;
+}
+
+.tekst{
+	width: 300px;
+}
+
+#opmerking{
+	display: block;
+	padding-bottom: 10px;
+}
+
+#upload{
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#reset{
+	background-color: #e46965;
+	font-family: Myriad Pro, arial;
+	font-size: 24pt;
+	color: #ffffff;
+	float:left;
+}
+
+#verzenden{
+	background-color: #e46965;
+	font-family: Myriad Pro, arial;
+	font-size: 24pt;
+	color: #ffffff;
+	float: right;
+}
+
+/* About */
+.about{
+	height: 400px;
+}
+
+#selfie{
+	padding-right: 15px;
+}
+
+/* Portfolio */
+#portfolio{
+	background-color:#dadada;
+	height: 350px;
+}
+
+#portfolio h1{
+	font-family: Myriad Pro, arial;
+	font-size: 42pt;
+	font-weight: normal;
+	text-align:left;
+	color: #e46965;
+	padding-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+
+#portfolio li{
+	display:block;
+	margin-left: 30px;
+}
+
+/* Illustrator */
+#illustrator{
+	background-color:#dadada;
+	height: 570px;
+}
+
+#illustrator h1{
+	font-family: Myriad Pro, arial;
+	font-size: 42pt;
+	font-weight: normal;
+	text-align:left;
+	color: #e46965;
+	padding-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+
+#illustrator li{
+	float:left;
+	display:inline;  /* inline-element */
+	margin-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 0;
+	margin-left: 10px;
+}
+	
+/* Photoshop */
+#photoshop{
+	background-color:#252525;
+	height: 340px;
+}
+
+#photoshop h1{
+	font-family: Myriad Pro, arial;
+	font-size: 42pt;
+	font-weight: normal;
+	text-align:left;
+	color: #e46965;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+}
+
+#photoshop li{
+	float:left;
+	display:inline;
+	padding-right: 15px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+	
+/* Contact */
+#contact{
+	background-color:#252525;
+	height: 280px;
+}
+
+#contact h1{
+	font-family:arial;
+	font-size: 20pt;
+	font-weight: normal;
+	text-align: left;
+	color: #e3726e;
+	margin-top: 25px;
+	margin-left: 0;
+	width: 280px;
+}
+
+#contact p{
+	font-family: Arial;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #9d9d9d;
+	margin: 0;
+	margin-top: 10px;
+	display: block;
+	width: 300px;
+}
+
+i{
+	font-style:italic;
+	font-size: 12pt;
+	padding-bottom: 10px;
+	display: block;
+}
+
+.from_the_blog{
+	list-style-type: none;
+	margin-left: 50px;
+	margin-right: 0;
+	position:absolute;
+}
+
+.contact_us{
+	list-style-type: none;
+	display: block;
+	width: 100px;
+	position: absolute;
+	margin-left: 350px;
+}
+
+.contact_us i{
+	font-style: normal;
+	margin-bottom: 10px;
+	font-size: 14pt;
+}
+
+.contact_us li{
+	font-family: Arial;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #9d9d9d;
+	margin: 0;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	display: block;
+	width: 300px;
+}
+
+.register_for_updates{
+	width: 350px;
+	display: block;
+	position:absolute;
+	margin-left: 650px;
+}
+
+.register_for_updates legend{
+	font-family:arial;
+	font-size: 20pt;
+	font-weight: normal;
+	text-align: left;
+	color: #e3726e;
+	width: 280px;
+	display: block;
+}
+
+.register_for_updates input{
+	display: block;
+	margin-top: 15px;
+	font-family: Arial;
+	font-size: 18pt;
+	color: #6d6d6d;
+	background-color: #363636;
+	width: 300px;
+	border: #6d6d6d medium;	
+}
+
+#register{
+	margin-top: 25px;
+}
+
+.register_for_updates .submit{
+	background-color: #e46965;
+	font-family: Myriad Pro, arial;
+	font-size: 24pt;
+	color: #ffffff;
+}
+
+/* Naar boven */
+#naar_Boven{
+	height: 40px;
+	background-color: #1d1d1d;
+}
+
+#naar_Boven a{
+	display: inline;
+	float:right;
+	font-family: arial;
+	font-size: 18pt;
+	color: #9d9d9d;
+	text-decoration: none;
+}
+
+/* Voettekst */
+#voettekst{
+	font-family:Arial;
+	font-size: 12pt;
+	color: #686868;
+	text-align:center;
+	background-color: #1d1d1d;
+}
