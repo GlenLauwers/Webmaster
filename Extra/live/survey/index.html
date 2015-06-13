@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!--Copyright by feeling4design (NL)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=2.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Fast form - DEMO</title>
+        <link rel="stylesheet" type="text/css" href="../template/style.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="../template/default.js"></script>
+        <script type="text/javascript" src="../template/validation.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="form menu">
+            	<a href="../">Generator</a>
+            	<a href="../contact">Contact</a>
+            	<a href="../call">Call me back</a>
+            	<a href="../book">Reservation</a>
+                <a href="../order">Order</a>
+            	<a href="../subscribe">Subscribtion</a>
+            	<a href="" class="active">Survey</a>
+            	<a href="../vote">Vote</a>
+            </div>
+            <div class="form light rounded survey_form">
+                <h1>Survey form:</h1>
+                <ul>
+                    <li>
+                        <span>Do you love this form generator?</span>
+                        <div>
+                            <label><input class="radio" type="radio" name="question1" value="Yes" />Yes</label><br />
+                            <label><input class="radio" type="radio" name="question1" value="No" />No</label>
+                            <input type="hidden" name="Loves it" value="" message="You forgot this question!" validation="empty" />
+                        </div>
+                    </li>
+                    <li>
+                        <span>Are you willing to buy it?</span>
+                        <div>
+                            <label><input class="radio" type="radio" name="question2" value="Yes" />Yes</label><br />
+                            <label><input class="radio" type="radio" name="question2" value="Maybe" />Maybe</label><br />
+                            <label><input class="radio" type="radio" name="question2" value="No" />No</label>
+                            <input type="hidden" name="Wants to buy" value="" message="You forgot this question!" validation="empty" />
+                        </div>
+                    </li>
+                    <li>
+                        <span>If you do not buy it please let us know why:</span>
+                        <div>
+                            <textarea name="Why not"></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <span></span>
+                        <button>Submit survey!</button>
+                    </li>
+                    <input type="hidden" name="hidden_receiver" value="info@feeling4design.nl">
+                    <input type="hidden" name="hidden_subject" value="Survey completed">
+                    <input type="hidden" name="hidden_duration" value="500">
+                    <input type="hidden" name="hidden_thanks_title" value="Thank you for completing this survey!">
+                    <input type="hidden" name="hidden_thanks_message" value="With your feedback we will improve this product.">
+                </ul>
+            </div>
+      	</div>
+    </body>
+</html>

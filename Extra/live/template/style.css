@@ -1,0 +1,114 @@
+body {background-color: rgb(235, 235, 235);}
+input:focus, textarea:focus, select:focus {border: 1px solid #999; background-color: #fff; color:#333; }
+input, select, textarea {font:1.1em "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;float:left;display:block;margin:0;padding:0;width: 200px;padding: 5px 10px 5px 5px;color: #8A8A8A;  background: #F8F8F8;  border: 1px solid #DFDFDF;}
+textarea {float:left;display:block;margin:0;padding: 5px 10px 5px 5px;width: 320px;height: 120px;color: #8A8A8A;  background: #F8F8F8;  border: 1px solid #DFDFDF;}
+.wrapper {width:960px;margin:auto;overflow: hidden;padding: 20px 0px 0px 0px;}
+.form.menu {padding: 0px 20px 0px 20px;float:left;width:890px;background-color: rgb(112, 112, 112);}
+.form.menu a {display:block;color: white;/* float:left; */padding: 0px 12px 0px 12px;background-color: rgb(112, 112, 112);height:40px;line-height: 37px;-webkit-transition: all .3s ease;  transition: all .3s ease;text-decoration: none;font-size: 14px;}
+.form.menu a:hover {background-color: rgb(101, 135, 223);}
+.form.menu a.active {background-color: rgb(101, 135, 223);}
+.form {font:12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;}
+.form .captcha {width:30px;}
+.form {float:left;background-color: #FFFFFF;padding:20px;font-size:12px;margin: 0px 20px 20px 10px;width: 890px;overflow: hidden;-moz-box-shadow: 10px 10px 5px #888;  -webkit-box-shadow: 10px 10px 5px #888;  box-shadow: 2px 2px 10px #888;-webkit-border-radius: 4px;  -moz-border-radius: 4px;  border-radius: 4px;}
+.form h1 {font-size:24px;margin: 0px 0px 30px 0px;}
+.form p {float:left;clear:left;}
+.form ul {float:left;margin:0;padding:0;list-style: none;width: 100%;}
+.form ul li {float:left;clear:both;color:#868686;margin:0px 0px 20px 0px;  }
+.form ul li span {float:left;display:block;width: 250px;text-align: right;padding: 0px 10px 5px 0px;}
+.form ul li.left span {text-align:left!important;}
+.form ul li div {float:left;position:relative;}
+.form ul li div label {float:left;display:block;padding: 2px 2px 5px 2px;line-height:12px;clear: both;}
+.form ul li div label input {width:30px}
+.form ul li div p {border: 1px solid rgb(209, 32, 32);top:0px;margin: 3px 0px 0px 0px;padding: 5px 10px 5px 10px;display: block;text-align: left;background-color: rgb(255, 231, 231);color: rgb(209, 32, 32);float: left;clear: left;}
+.form ul li button {-webkit-transition: all .3s ease;transition: all .3s ease;font-size:14px;cursor:pointer;border:0;padding:10px 30px 10px 30px;  background-color: rgb(112, 112, 112);color: white;}
+.form ul li button:hover {background-color: rgb(101, 135, 223);}
+/*select*/
+.form ul li.select select {width:auto;;margin:0px 5px 0px 0px;}
+/*clear_inherit*/
+.form ul li.clear_inherit {clear:inherit;width: auto;}
+/*spacer*/
+.form ul li.spacer {border-top:1px dotted;width: 100%;}
+.form ul li.spacer.invisable {border:0;margin: 0;}
+/*dark*/
+.form.dark {text-shadow: 1px 1px 0 #000;color: rgb(197, 197, 197);-webkit-border-radius: 5px;border-radius: 5px;background-color:#242424;}
+.form.dark span {color: rgb(197, 197, 197);}
+.form.dark input, .form.dark select, .form.dark textarea {color:rgb(197, 197, 197);background-color: rgb(48, 48, 48);border: 1px solid rgb(94, 94, 94);}
+.form.dark input:focus, .form.dark textarea:focus, .form.dark select:focus {background-color: rgb(78, 78, 78);border: 1px solid rgb(114, 114, 114);}
+.form.dark ul li div p {color: rgb(255, 255, 255);border:0;background-color: rgb(136, 83, 83);}
+.form.dark ul li button:hover {background-color: rgb(226, 226, 226);color: black;}
+/*rounded*/
+.form.rounded input, .form.rounded select, .form.rounded textarea, .form.rounded button, .form.rounded p {-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+/*extra customizations per form*/
+.contact_form ul li span {width:60px;}
+.order_form ul li span {width:60px;}
+.call_form ul li span {width:60px;}
+.book_form ul li span {width:100px;}
+.subscribe_form ul li span {width:40px;}
+.survey_form ul li span {width:260px;}
+.vote_form ul li span {width:180px;}
+/*responsive*/
+@media (min-width: 100px)
+{
+    .wrapper {width:320px;}
+    .form {clear:both;width:280px;padding:10px 10px 0px 10px;}
+    .form.menu {width:300px;padding: 0px 0px 0px 0px;}
+    .form.menu a {font-size:12px;clear:both;width:100%;margin:0px 0px 0px 0px;}
+    .form ul li span {padding: 0px 0px 10px 0px;clear:both;width:100%;text-align: left;}
+    .form ul li input {clear:both;}
+    input, select, textarea {width:260px;margin:0px 0px 0px 0px;padding:10px 10px 10px 10px;}
+    .form ul li.clear_inherit {width: auto;}
+    .form ul li.clear_inherit span {float:left;clear:inherit;width: auto;padding: 5px 10px 10px 0px;}
+    .form ul li.select select {padding:5px 5px 5px 2px;}
+    .form ul li div label {padding:10px 0px 10px 0px;}
+}
+@media (min-width: 530px)
+{
+    .wrapper {width:510px;}
+    .form {clear:both;width:470px;padding:10px 10px 0px 10px;}
+    .form.menu {width:290px;padding: 0px 0px 0px 0px;}
+    .form.menu a {font-size:12px;clear:both;width:100%;margin:0px 0px 0px 0px;}
+    .form ul li span {padding: 0px 0px 10px 0px;clear:both;width:100%;text-align: left;}
+    .form ul li input {clear:both;}
+    input, select, textarea {width:450px;margin:0px 0px 0px 0px;padding:10px 10px 10px 10px;}
+    .form ul li.clear_inherit {width: auto;}
+    .form ul li.clear_inherit span {float:left;clear:inherit;width: auto;padding: 5px 10px 0px 0px;}
+    .form ul li.select select {padding:5px 5px 5px 2px;}
+    .form ul li div label {padding:10px 0px 10px 0px;}    
+}
+@media (min-width: 760px)
+{
+	.wrapper {width:740px;}
+    .form {clear:both;width:700px;padding:10px 10px 0px 10px;}
+    .form.menu {width:720px;padding: 0px 0px 0px 0px;}
+    .form.menu a {font-size:12px;clear:both;width:100%;margin:0px 0px 0px 0px;}
+    .form ul li span {padding: 0px 0px 10px 0px;clear:both;width:100%;text-align: left;}
+    .form ul li input {clear:both;}
+    input, select, textarea {width:660px;margin:0px 0px 0px 0px;padding:10px 10px 10px 10px;}
+    .form ul li.clear_inherit {width: auto;}
+    .form ul li.clear_inherit span {float:left;clear:inherit;width: auto;padding: 5px 10px 0px 0px;}
+    .form ul li.select select {padding:5px 5px 5px 2px;}
+    .form ul li div label {padding:10px 0px 10px 0px;}    
+}
+@media (min-width: 1020px)
+{
+	.wrapper {width:960px;}
+    .form {clear:both;width: 890px;padding: 20px 20px 20px 20px;}
+    .form.menu {width:890px;padding: 0px 20px 0px 20px;}
+    .form.menu a {font-size:12px;clear: initial;float: left;width:auto;margin:0px 0px 0px 0px;padding: 0px 12px 0px 12px;font-size: 14px;}
+	.form ul li span {float:left;clear:inherit;width: 260px;padding: 4px 10px 0px 0px;}
+    .form ul li input {clear:both;}
+    input, select, textarea {width: 200px;margin:0px 0px 0px 0px;padding: 5px 10px 5px 5px;}
+    textarea {width:500px;}
+	.form ul li.clear_inherit {width: auto;}
+    .form ul li.clear_inherit span {float:left;clear: initial;width:110px;padding: 5px 10px 0px 0px;text-align: right;}
+    .form ul li.select select {padding:5px 5px 5px 2px;}
+    .form ul li div label {padding: 5px 0px 5px 0px;} 
+	.contact_form ul li span {width:60px;}
+	.order_form ul li span {width: 130px;}
+	.order_form ul li.clear_inherit span {width:130px;}
+	.call_form ul li span {width:60px;}
+	.book_form ul li span {width: 110px;text-align: right;}
+	.subscribe_form ul li span {width:40px;}
+	.survey_form ul li span {width: 260px;padding-top: 2px;text-align: right;}
+	.vote_form ul li span {width: 170px;padding-top: 2px;text-align: right;}
+}

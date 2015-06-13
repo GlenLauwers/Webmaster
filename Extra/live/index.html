@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <!--Copyright by feeling4design (NL)-->
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Fast form - DEMO</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+      <script type="text/javascript" src="generator.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="form menu">
+            <a href="" class="active">Generator</a>
+            <a href="contact">Contact</a>
+            <a href="call">Call me back</a>
+            <a href="book">Reservation</a>
+            <a href="order">Order</a>
+            <a href="subscribe">Subscribtion</a>
+            <a href="survey">Survey</a>
+            <a href="vote">Vote</a>
+         </div>
+         <div class="form rounded generator">
+            <h1>Generate your form:</h1>
+            <ul>
+               <li>
+                  <span>Type:</span>
+                  <div>
+                     <select name="type">
+                        <option value="contact" selected="selected">Contact form</option>
+                        <option value="call">Call me back form</option>
+                        <option value="book">Reservation form</option>
+                        <option value="order">Order form</option>
+                        <option value="subscribe">Subscribtion form</option>
+                        <option value="servey">Survey form</option>
+                        <option value="vote">Vote / Poll form</option>
+                     </select>
+                  </div>
+               </li>
+               <li>
+                  <span>Theme:</span>
+                  <div>
+                     <select name="theme">
+                        <option value="light">Light</option>
+                        <option value="light rounded" selected="selected">Light rounded</option>
+                        <option value="dark">Dark</option>
+                        <option value="dark rounded">Dark rounded</option>
+                     </select>
+                  </div>
+               </li>
+               <li>
+                  <span>Captcha:</span>
+                  <div>
+                     <select name="captcha">
+                        <option value="1">Yes</option>
+                        <option value="0" selected="selected">No</option>
+                     </select>
+                  </div>
+               </li>
+               <li>
+                  <span>Fade duration:</span>
+                  <div><input type="text" value="500" style="width:50px;" name="duration" message="Fade duration must be a number." validation="numeric" /><i style="display:block;float:left;margin:3px 0px 0px 5px;">milliseconds (0 for no fade)</i></div>
+               </li>
+               <li>
+                  <span>Email receiver:</span>
+                  <div><input type="text" value="your@email.com" name="receiver" message="Please a valid email address." validation="email" /></div>
+               </li>
+               <li>
+                  <span>Email subject:</span>
+                  <div><input type="text" value="Question received" name="subject" message="Please enter a subject." validation="empty" /></div>
+               </li>
+               <li>
+                  <span>Thanks title:</span>
+                  <div><input type="text" value="Thank you!" name="thanks_title" message="Please enter a title." validation="empty" /></div>
+               </li>
+               <li>
+                  <span>Thanks message:</span>
+                  <div><input type="text" value="We will reply within 24 hours." name="thanks_message" message="Please enter message." validation="empty" /></div>
+               </li>
+               <li>
+                  <span>Button name:</span>
+                  <div><input type="text" value="Submit" name="button" message="Please enter a button name." validation="empty" /></div>
+               </li>
+               <input type="hidden" name="hidden_duration" value="500">
+               <li>
+                  <span></span>
+                  <button>Generate code</button>
+               </li>
+            </ul>
+         </div>
+         <div class="form code">
+            <h1>Your HTML code needs to be pasted in templates/index.html</h1>
+            <p>Instruction can be found <a target="_blank" href="documentation.pdf">here</a>.</p>
+         </div>
+         <div class="form code html">
+            <h1>Your HTML code (index.html):</h1>
+            <textarea readonly="readonly"></textarea>
+         </div>
+      </div>
+   </body>
+</html>

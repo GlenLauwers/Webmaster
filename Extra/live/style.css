@@ -1,0 +1,35 @@
+body {background-color: rgb(235, 235, 235);}
+input:focus, textarea:focus, select:focus {border: 1px solid #999; background-color: #fff; color:#333; }
+input, select, textarea {font:1.1em "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;float:left;display:block;margin:0;padding:0;width: 200px;padding: 5px 10px 5px 5px;color: #8A8A8A;  background: #F8F8F8;  border: 1px solid #DFDFDF;}
+textarea {float:left;display:block;margin:0;padding: 5px 10px 5px 5px;width: 320px;height: 120px;color: #8A8A8A;  background: #F8F8F8;  border: 1px solid #DFDFDF;}
+.wrapper {width:960px;margin:auto;overflow: hidden;padding: 20px 0px 0px 0px;}
+.form.menu {padding: 0px 20px 0px 20px;float:left;width:890px;background-color: rgb(112, 112, 112);}
+.form.menu a {display:block;color: white;float:left;padding: 0px 12px 0px 12px;background-color: rgb(112, 112, 112);height:40px;line-height: 37px;-webkit-transition: all .3s ease;  transition: all .3s ease;text-decoration: none;font-size: 14px;}
+.form.menu a:hover {background-color: rgb(101, 135, 223);}
+.form.menu a.active {background-color: rgb(101, 135, 223);}
+.form {font:12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;}
+.form .captcha {width:30px;}
+.form {float: left;background-color: #FFFFFF;padding:20px;font-size:12px;margin: 0px 20px 20px 10px;width: 400px;overflow: hidden;-moz-box-shadow: 10px 10px 5px #888;  -webkit-box-shadow: 10px 10px 5px #888;  box-shadow: 2px 2px 10px #888;-webkit-border-radius: 4px;  -moz-border-radius: 4px;  border-radius: 4px;}
+.form h1 {font-size:24px;margin: 0px 0px 30px 0px;}
+.form ul {float:left;margin:0;padding:0;list-style: none;clear: both;}
+.form ul li {float:left;clear:both;width:600px;color:#868686;margin:0px 0px 20px 0px;  }
+.form ul li span {float:left;display:block;width: 60px;text-align: right;padding: 5px 10px 5px 0px;}
+.form ul li div {float:left;position:relative;}
+.form ul li div p {border: 1px solid rgb(209, 32, 32);top:0px;margin: 3px 0px 0px 0px;padding: 5px 10px 5px 10px;display: block;text-align: left;background-color: rgb(255, 231, 231);color: rgb(209, 32, 32);float: left;clear: left;}
+.form ul li button {-webkit-transition: all .3s ease;transition: all .3s ease;font-size:14px;cursor:pointer;border:0;padding:10px 30px 10px 30px;  background-color: rgb(112, 112, 112);color: white;}
+.form ul li button:hover {background-color: rgb(101, 135, 223);}
+/*dark*/
+.form.dark {text-shadow: 1px 1px 0 #000;color: rgb(197, 197, 197);-webkit-border-radius: 5px;border-radius: 5px;background-color:#242424;}
+.form.dark span {color: rgb(197, 197, 197);}
+.form.dark input, .form.dark select, .form.dark textarea {color:rgb(197, 197, 197);background-color: rgb(48, 48, 48);border: 1px solid rgb(94, 94, 94);}
+.form.dark input:focus, .form.dark textarea:focus, .form.dark select:focus {background-color: rgb(78, 78, 78);border: 1px solid rgb(114, 114, 114);}
+.form.dark ul li div p {color: rgb(255, 255, 255);border:0;background-color: rgb(136, 83, 83);}
+.form.dark ul li button:hover {background-color: rgb(226, 226, 226);color: black;}
+/*rounded*/
+.form.rounded input, .form.rounded select, .form.rounded textarea, .form.rounded button, .form.rounded p {-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+/*generator*/
+.form.generator ul li span {width: 120px;}
+/*code*/
+.form.code {margin:0px 0px 20px 0px;width:430px}
+.form.code h1 {font-size:12px;margin: 0px 0px 5px 0px;}
+.form.code textarea {width: 410px;height: 407px;}

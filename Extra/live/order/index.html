@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!--Copyright by feeling4design (NL)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=2.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Fast form - DEMO</title>
+        <link rel="stylesheet" type="text/css" href="../template/style.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="../template/default.js"></script>
+        <script type="text/javascript" src="../template/validation.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="form menu">
+            	<a href="../">Generator</a>
+            	<a href="../contact">Contact</a>
+            	<a href="../call">Call me back</a>
+            	<a href="../book">Reservation</a>
+            	<a href="" class="active">Order</a>
+            	<a href="../subscribe">Subscribtion</a>
+            	<a href="../survey">Survey</a>
+            	<a href="../vote">Vote</a>
+            </div>
+            <div class="form light rounded order_form">
+                <h1>Place an order:</h1>
+                <ul>
+                    <li class="select">
+                        <span>Credit Card:</span>
+                        <div>
+                            <select name="Credit Card" message="!" validation="empty">
+                                <option value="" selected="selected">Please Select Card</option>
+                                <option value="Visa">Visa</option>
+                                <option value="MasterCard">MasterCard</option>
+                                <option value="Discover">Discover</option>
+                                <option value="American Express">American Express</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Card number:</span>
+                        <div>
+                            <input type="text" name="Card number" maxlength="13" validation="numeric" />
+                        </div>
+                    </li>
+                    <li class="spacer invisable"></li>
+                    <li class="select clear_inherit left">
+                        <span>Expiration date:</span>
+                        <div>
+                            <select name="month" message="!" validation="empty">
+                                <option value="" selected="selected">Month</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="select clear_inherit">
+                        <div>
+                            <select name="year" message="!" validation="empty">
+                                <option value="" selected="selected">Year</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Verification number:</span>
+                        <div>
+                            <input type="text" name="Verification number" maxlength="4" validation="numeric" /><i style="display:block;float:left;margin:3px 0px 0px 5px;">3 or 4 digits</i>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li>
+                        <span>First name:</span>
+                        <div>
+                            <input type="text" name="First name" message="You did not enter your First name." validation="empty" />
+                        </div>
+                    </li>
+                    <li class="clear_inherit">
+                        <span>Last name:</span>
+                        <div>
+                            <input type="text" name="Last name" message="You did not enter your Last name." validation="empty" />
+                        </div>
+                    </li>
+                    <li>
+                        <span>Billing address:</span>
+                        <div>
+                            <input type="text" name="Billing address" validation="empty" />
+                        </div>
+                    </li>
+                    <li>
+                        <span>City:</span>
+                        <div>
+                            <input type="text" name="City" validation="empty" />
+                        </div>
+                    </li>
+                    <li>
+                        <span>State:</span>
+                        <div>
+                            <input type="text" name="State" validation="empty" />
+                        </div>
+                    </li>
+                    <li>
+                        <span>ZIP Code:</span>
+                        <div>
+                            <input type="text" name="ZIP Code" validation="empty" />
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li>
+                        <span>Comments:</span>
+                        <div>
+                            <textarea name="Comments"></textarea>
+                        </div>
+                    </li>
+                    <li class="spacer"></li>
+                    <li>
+                        <span></span>
+                        <button>Send order!</button>
+                    </li>
+                    <input type="hidden" name="hidden_receiver" value="info@feeling4design.nl">
+                    <input type="hidden" name="hidden_subject" value="Order request">
+                    <input type="hidden" name="hidden_duration" value="500">
+                    <input type="hidden" name="hidden_thanks_title" value="Thank you for your order!">
+                    <input type="hidden" name="hidden_thanks_message" value="We will approve this order within 24 hours.">
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

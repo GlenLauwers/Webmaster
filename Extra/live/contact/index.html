@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!--Copyright by feeling4design (NL)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=2.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Fast form - DEMO</title>
+        <link rel="stylesheet" type="text/css" href="../template/style.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="../template/default.js"></script>
+        <script type="text/javascript" src="../template/validation.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="form menu">
+            	<a href="../">Generator</a>
+            	<a href="" class="active">Contact</a>
+            	<a href="../call">Call me back</a>
+            	<a href="../book">Reservation</a>
+                <a href="../order">Order</a>
+            	<a href="../subscribe">Subscribtion</a>
+            	<a href="../survey">Survey</a>
+            	<a href="../vote">Vote</a>
+            </div>
+            <div class="form light rounded contact_form">
+                <h1>Contact form:</h1>
+                <ul>
+                    <li>
+                        <span>Name:</span>
+                        <div>
+                            <input type="text" name="Name" message="Your name is empty." validation="empty" />
+                        </div>
+                    </li>
+                    <li>
+                        <span>Email:</span>
+                        <div>
+                            <input type="text" name="Email address" message="Email address is incorrect." validation="email" />
+                        </div>
+                    </li>
+                    <li>
+                        <span>Question:</span>
+                        <div>
+                            <textarea name="Question" message="You did not enter any question." validation="empty"></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <span></span>
+                        <button>Submit</button>
+                    </li>
+                    <input type="hidden" name="hidden_receiver" value="info@feeling4design.nl">
+                    <input type="hidden" name="hidden_subject" value="Question received">
+                    <input type="hidden" name="hidden_duration" value="500">
+                    <input type="hidden" name="hidden_thanks_title" value="Thank you for your question!">
+                    <input type="hidden" name="hidden_thanks_message" value="We will reply to you within 24 hours.">
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
