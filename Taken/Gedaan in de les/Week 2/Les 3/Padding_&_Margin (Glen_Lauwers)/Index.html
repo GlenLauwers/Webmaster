@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Klassen, padding, margin en randen</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+
+	<body>
+		<h1 class="titel">Kop 1 met padding, margin, border en pseudo-klasse: hover</h1>
+        	<p class="intro">Op deze pagina wordt gewerkt met klassen, pseudoklassen, links en een anker. De koppen en alinea's sluiten zonder witruimte op elkaar aan. Standaard krijgen koppen en alinea's van de browser witruimte boven en onder. In het boek wordt dit aangepast door de marges aan alle kanten op 0 te zetten en daarna het padding weer witruimte aan te bregen op de plaatsen waar je dat nodig vindt. Deze pagina doet het anders, in de tekst lees je hoe. Overigens, deze alinea heeft het attribuut class="intro". De enige eigenschap van de klasse is font-style: Italic.</p>
+            
+		<h2>Kop 2</h2>
+        	<p>Deze alinea sluit zonder witruimte aan bij de kop erboven doordat de h2 een margin-bottom:0 heeft gekrgen en de alinea een margin-top:0.</p>
+		
+        <h3>Kop 3</h3>
+        	<p>En deze alinea sluit aan bij de kop erboven doordat ook de h3 een margin-bottom:0 heeft gekregen en de alinea al een margin-top:0 had.
+            De witruimte boven deze alinea komt van de alinea erboven. Zodrajde de margin-bottom van de alinea ook op 0 zet verdwijnt die witruimte. Maar dat is waarschijnlijk niet wat je wilt want alle alinea's zullen dan een aaneengesloten blok tekst vormen.</p>
+            
+		<h3>Kop 3</h3>
+		<h4>Kop 4</h4>
+        
+        	<p>Ook de h4 heeft een margin-bottom:0 gekregen, net als de andere koppen. Doordat de alinea een margin top van 0 heeft gekregen sluit deze aan bij de h4.</p>
+            <p class="accent">Deze alinea heeft een class: accent en een pseudo-klasse: hover. Kijk vooral in de stylesheet om te zien hoe het daar is ingegeven.</p>
+            
+            <p class="accent">Zie ook in de code dat de link hieronder tussen p-tags staat. Een a-element mag nooit los in een pagina staan. Dat betekent, met de elementen die je nu bekend zijn, dat je een link kunt plaatsten in een kop of in een alinea. Later komen hier nog andere mogelijkheden bij.</p>                       
+	</body>
+</html>

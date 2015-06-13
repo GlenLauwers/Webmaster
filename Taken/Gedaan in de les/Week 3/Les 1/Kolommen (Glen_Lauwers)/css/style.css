@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* CSS Document */
+#header{	background-color:#23FF00;
+			text-align: center;
+			height: 100px;
+}
+
+#kolom_links{	background-color: #C00;
+				width: 200px;
+				float: left;
+				min-height: 485px;
+}
+
+#kolom_rechts{	background-color:#0CF;
+				width: 200px;
+				float: right;
+}
+
+#tekst{		background-color: #FF3;
+			margin-right: 200px;
+			margin-left: 200px;
+			padding-top:.3em;
+			
+}
+	
+#footer{	background-color: #904800;
+			clear:both;	
+}
+
+#footer p{ text-align:center;
+}
+
+body{	font-family: verdana, Arial, Helvetica, sans-serif;
+		font-size: 100%/150%;
+		color: #333;
+		margin:0;
+}	
+
+#wrapper{	background-color:#DBF3F3;
+			width: 998 px;
+			margin: auto;
+}
+
+p{	margin: 0;
+	font-size: 80%;
+	padding: 6px;
+}
+
+h1{	padding: 20px;
+	margin-top: 0;
+	text-align:center;
+}
+
+#kop {
+    background-color: #090;
+}
+
+h2{		font-size: 80%;
+		margin: 0;
+		padding: 0 6px
+}

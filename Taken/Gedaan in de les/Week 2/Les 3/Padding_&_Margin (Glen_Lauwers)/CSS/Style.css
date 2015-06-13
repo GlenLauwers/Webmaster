@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body{	font-family:Verdana, arial, helvetica, sans-serif;
+		font-size: 100%;
+		color:#3333333;
+		line-height:150%;
+		margin: 40px
+		background: #D8D8D8}
+
+h1{	background: #CCCCFF;
+	font-family:arial, helvetica, sans-serif;
+	font-size: 150%;
+	line-heigt: 150%;
+	font-weight:bold;
+	border: 2px solid #99CC00;
+	padding: 10px;
+	margin: 100px}
+
+.titel:hover{	color:#C00;
+				background: #FC0;
+				border-color:#F0F}
+			
+h2{	margin-bottom: 0;
+	font: bolt 140% arial, helvetica, sans-serif;
+	color:#900}
+
+h3{	color:#000;
+	margin-bottom: 0;
+	front: bold 120% Arial, Helvetica, sans-serif}
+
+h4{	Color: #000;
+	text-indent: lem;
+	margin-bottom: 0;
+	font: bold 90% arial, helvetica, sans-serif}
+	
+p{	font-family: Verdana, arial, helvetica;
+	font-size:90%;
+	margin-top:0}
+
+a{	color:#CC0000;
+	text-decoration: underline}
+
+a:visited{ color: #CC0000}
+
+a: hover{	color: #006600}
+
+a: active{	color:#00CCFF}
+
+.accent{	font-size: 80%;
+			font-style: italic;
+			color:#900}
+
+p.accent:hover{	color:#390;
+					border: 2px solid #99CC00}
+
+.intro{	font-style: italic}

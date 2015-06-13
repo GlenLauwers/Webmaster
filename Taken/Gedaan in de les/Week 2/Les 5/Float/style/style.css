@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* CSS Document */
+.body{ body-size: 100%;
+		margin: 0;
+}
+
+.links{	float: left;
+}
+
+.rechtsmetclear{	float: right;
+					clear: left;
+}
+
+.rechts{ float: right;
+}
+
+.clearboth{ clear:both;
+}
+
+.kolom_links{	float: left;
+				width: 48%;
+		  		background: #F90004;
+				padding: 1%;
+				margin-top:0;
+}
+
+.kolom_rechts{background: #00FF46;
+				padding: 1%;
+				margin-top:0;
+				margin-left: 50%;
+}
